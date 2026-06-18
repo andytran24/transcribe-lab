@@ -11,7 +11,7 @@ A hands-on showcase of the [Cohere Transcribe](https://docs.cohere.com/v2/change
 | 1 | Noisy Audio | Uses a local FLEURS English clip, adds synthetic background noise (SNR ≈ 10 dB), and transcribes it |
 | 2 | Near Real-Time | Chunks mic input (or a local WAV file) into 4-second windows and transcribes each as it arrives |
 | 3 | Multilingual | Transcribes all 14 supported languages using local FLEURS clips |
-| 4 *(optional)* | Local Streaming | Real-time mic transcription using the model running locally — requires HF token + GPU recommended |
+| 4 *(optional, local only)* | Local Streaming | Real-time mic transcription using the model running locally — requires HF token + microphone + GPU recommended (not supported in Codespaces) |
 
 Audio samples for all 14 languages are included in the `audio/` folder — no internet connection required for cells 1–3.
 
@@ -39,6 +39,19 @@ Get a free API key at [dashboard.cohere.com](https://dashboard.cohere.com).
 ```bash
 jupyter notebook transcribe_lab.ipynb
 ```
+
+## Running in GitHub Codespaces
+
+This repo includes a [`.devcontainer`](.devcontainer/devcontainer.json) so it runs in GitHub Codespaces with no local setup. Click **Code → Codespaces → Create codespace on main**. The container automatically installs the system audio libraries and Python dependencies.
+
+Then provide your Cohere API key one of two ways:
+
+- **Codespaces secret (recommended):** add a secret named `CO_API_KEY` under your repo's Settings → Secrets and variables → Codespaces. It is exposed as an environment variable automatically.
+- **`.env` file:** run `cp .env.example .env` in the Codespaces terminal and add your key.
+
+Open `transcribe_lab.ipynb` and run the cells.
+
+> **Cell 4 is not supported in Codespaces.** It records live microphone audio and runs the 2 GB model locally on a GPU. Codespaces is a headless cloud container with no microphone and no GPU, so Cell 4 cannot capture audio there. **Cells 1–3 work fully in Codespaces** (they are API-based and use the committed audio files). Run Cell 4 only in a local environment with a microphone — see the section below.
 
 ## Optional: Cell 4 Setup (Local Model Streaming)
 
