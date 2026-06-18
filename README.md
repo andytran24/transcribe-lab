@@ -83,4 +83,5 @@ The cell loads `HF_TOKEN` from `.env` automatically. On first run it downloads ~
 - [Cohere Transcribe Model](https://docs.cohere.com/v2/docs/transcribe)
 - [Cohere Transcribe Model announcement](https://docs.cohere.com/v2/changelog/cohere-transcribe-03-2026)
 - [Audio Transcriptions API reference](https://docs.cohere.com/v2/reference/create-audio-transcription)
-- [Cohere Transcribe HuggingFace Demo UI](https://huggingface.co/spaces/CohereLabs/cohere-transcribe-03-2026)
+- [Cohere Transcribe Model on HuggingFace](https://huggingface.co/CohereLabs/cohere-transcribe-03-2026)
+- [Cohere Transcribe HuggingFace Demo](https://huggingface.co/spaces/CohereLabs/cohere-transcribe-03-2026)
