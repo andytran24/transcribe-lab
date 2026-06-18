@@ -10,3 +10,4 @@ jupyter>=1.0.0
 # Cell 4 (optional — local model streaming)
 torch
 transformers>=4.50.0
+librosa
