@@ -6,11 +6,13 @@ A hands-on showcase of the [Cohere Transcribe](https://docs.cohere.com/v2/change
 
 `transcribe_lab.ipynb` — a Jupyter notebook with three demonstrations:
 
-| Cell | Topic | Description |
-|------|-------|-------------|
-| 1 | Noisy Audio | Downloads a FLEURS English clip, adds synthetic background noise (SNR ≈ 10 dB), and transcribes it |
-| 2 | Near Real-Time | Chunks mic input (or a WAV file) into 4-second windows and transcribes each as it arrives |
-| 3 | Multilingual | Transcribes FLEURS clips in English, French, Japanese, Arabic, and Spanish |
+| # | Topic | Description |
+|---|-------|-------------|
+| 1 | Noisy Audio | Uses a local FLEURS English clip, adds synthetic background noise (SNR ≈ 10 dB), and transcribes it |
+| 2 | Near Real-Time | Chunks mic input (or a local WAV file) into 4-second windows and transcribes each as it arrives |
+| 3 | Multilingual | Transcribes all 14 supported languages using local FLEURS clips |
+
+Audio samples for all 14 languages are included in the `audio/` folder — no internet connection required to run the notebook.
 
 ## Setup
 
@@ -37,9 +39,17 @@ Get a free API key at [dashboard.cohere.com](https://dashboard.cohere.com).
 jupyter notebook transcribe_lab.ipynb
 ```
 
+## Audio Files
+
+| Path | Contents |
+|------|----------|
+| `audio/en_clean.wav` | Clean English FLEURS validation clip |
+| `audio/en_noisy.wav` | Same clip with synthetic background noise (SNR ≈ 10 dB) |
+| `audio/multilingual/` | FLEURS validation clips for all 14 supported languages |
+
 ## Supported Languages
 
-English · German · French · Italian · Spanish · Portuguese · Greek · Dutch · Polish · Vietnamese · Chinese · Arabic · Japanese · Korean
+🇺🇸 English · 🇫🇷 French · 🇩🇪 German · 🇪🇸 Spanish · 🇧🇷 Portuguese · 🇮🇹 Italian · 🇳🇱 Dutch · 🇵🇱 Polish · 🇬🇷 Greek · 🇸🇦 Arabic · 🇯🇵 Japanese · 🇰🇷 Korean · 🇨🇳 Chinese · 🇻🇳 Vietnamese
 
 ## Resources
 
