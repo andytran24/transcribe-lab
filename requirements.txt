@@ -6,3 +6,7 @@ sounddevice>=0.4.7
 soundfile>=0.12.1
 ipython>=8.0.0
 jupyter>=1.0.0
+
+# Cell 4 (optional — local model streaming)
+torch
+transformers>=4.50.0
