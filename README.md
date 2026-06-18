@@ -53,6 +53,7 @@ jupyter notebook transcribe_lab.ipynb
 
 ## Resources
 
+- [Cohere Transcribe docs](https://docs.cohere.com/v2/docs/transcribe)
 - [Cohere Transcribe announcement](https://docs.cohere.com/v2/changelog/cohere-transcribe-03-2026)
 - [Audio Transcriptions API reference](https://docs.cohere.com/v2/reference/create-audio-transcription)
 - [Cohere Transcribe HuggingFace Space](https://huggingface.co/spaces/CohereLabs/cohere-transcribe-03-2026)
