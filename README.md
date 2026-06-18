@@ -4,7 +4,7 @@ A hands-on showcase of the [Cohere Transcribe](https://docs.cohere.com/v2/change
 
 ## What's Inside
 
-`transcribe_demo.ipynb` — a Jupyter notebook with three demonstrations:
+`transcribe_lab.ipynb` — a Jupyter notebook with three demonstrations:
 
 | Cell | Topic | Description |
 |------|-------|-------------|
@@ -34,7 +34,7 @@ Get a free API key at [dashboard.cohere.com](https://dashboard.cohere.com).
 ### 3. Launch the notebook
 
 ```bash
-jupyter notebook transcribe_demo.ipynb
+jupyter notebook transcribe_lab.ipynb
 ```
 
 ## Supported Languages
