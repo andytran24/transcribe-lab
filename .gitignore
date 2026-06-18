@@ -1,0 +1,6 @@
+.env
+audio/*.wav
+audio/multilingual/*.wav
+__pycache__/
+*.pyc
+.ipynb_checkpoints/

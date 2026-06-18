@@ -1,0 +1,9 @@
+cohere>=5.15.0
+python-dotenv>=1.0.0
+numpy>=1.26.0
+scipy>=1.13.0
+sounddevice>=0.4.7
+soundfile>=0.12.1
+requests>=2.32.0
+ipython>=8.0.0
+jupyter>=1.0.0
